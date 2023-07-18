@@ -78,6 +78,10 @@ use("nvim-lualine/lualine.nvim")
 use ("lewis6991/gitsigns.nvim")
 -- Discord RPC
 use ("andweeb/presence.nvim")
+-- Trouble
+use ("folke/trouble.nvim")  
+-- LSP Colors
+use ("folke/lsp-colors.nvim")
 -- Search
 use ("nvim-telescope/telescope.nvim")
 -- TopBar
@@ -86,7 +90,6 @@ use ("romgrk/barbar.nvim")
 use ("simrat39/rust-tools.nvim")
 -- Colorizer
 use("norcalli/nvim-colorizer.lua")
-
 
  if packer_bootstrap then
     require("packer").sync()
