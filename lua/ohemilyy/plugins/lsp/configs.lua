@@ -1,0 +1,41 @@
+local status_ok, lsp_installer = pcall(require, "nvim-lsp-installer")
+if not status_ok then
+	return
+end
+
+local lspconfig = require("lspconfig")
+
+lspconfig.phpcs = {
+  cmd = { "php", "<path-to-phpcs-fixer>", "fix", "--using-cache=no", "--rules=@PSR12", "--stdin", "--stdin-filename", "$FILENAME" },
+  filetypes = { "php" },
+  root_dir = lspconfig.util.root_pattern(".git", ".git/", "composer.json"),
+}
+
+
+local servers = {
+	"jsonls",
+	-- "lua_ls",
+	"html",
+	"cssls",
+	"emmet_ls",
+	"pyright",
+	"bashls",
+	"tsserver",
+  "phpactor",
+}
+
+lsp_installer.setup({
+	ensure_installed = servers,
+})
+
+for _, server in pairs(servers) do
+	local opts = {
+		on_attach = require("ohemilyy.plugins.lsp.handlers").on_attach,
+		capabilities = require("ohemilyy.plugins.lsp.handlers").capabilities,
+	}
+	local has_custom_opts, server_custom_opts = pcall(require, "ohemilyy.plugins.lsp.settings." .. server)
+	if has_custom_opts then
+		opts = vim.tbl_deep_extend("force", server_custom_opts, opts)
+	end
+	lspconfig[server].setup(opts)
+end

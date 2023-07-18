@@ -42,3 +42,5 @@ opt.splitbelow = true
 
 opt.iskeyword:append("-")
 
+-- End Of Buffer Character * Thanks Katie :3c *
+opt.fillchars:append { eob = "󰄛" }

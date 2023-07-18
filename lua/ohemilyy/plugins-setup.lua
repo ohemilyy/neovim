@@ -78,6 +78,8 @@ use("nvim-lualine/lualine.nvim")
 use ("lewis6991/gitsigns.nvim")
 -- Discord RPC
 use ("andweeb/presence.nvim")
+-- ToDo Comments
+use ("folke/todo-comments.nvim")
 -- Trouble
 use ("folke/trouble.nvim")  
 -- LSP Colors
@@ -94,6 +96,18 @@ use ("romgrk/barbar.nvim")
 use ("simrat39/rust-tools.nvim")
 -- Colorizer
 use("norcalli/nvim-colorizer.lua")
+-- Neofev
+use("folke/neodev.nvim")
+-- NullLS
+use("jose-elias-alvarez/null-ls.nvim")
+-- NLSP Settings
+use("tamago324/nlsp-settings.nvim")
+-- LSPKind
+use("onsails/lspkind.nvim")
+-- LSP Config
+use("neovim/nvim-lspconfig")
+-- LSP Installer
+use("williamboman/nvim-lsp-installer")
 
  if packer_bootstrap then
     require("packer").sync()

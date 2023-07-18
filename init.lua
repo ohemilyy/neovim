@@ -9,6 +9,9 @@ require("ohemilyy.plugins.neotree")
 require("ohemilyy.plugins.trouble")
 require("ohemilyy.plugins.telescope")
 require("ohemilyy.plugins.notify")
-
+require("ohemilyy.plugins.todo-comments")
+require("ohemilyy.plugins.lsp.configs")
+require("ohemilyy.plugins.lsp.handlers").setup()
+require("ohemilyy.plugins.lsp.null-ls")
 
 vim.opt.termguicolors = true
