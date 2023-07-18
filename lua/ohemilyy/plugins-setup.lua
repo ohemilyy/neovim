@@ -30,11 +30,20 @@ end
 return packer.startup(function(use)
   -- packer can manage itself
 use("wbthomason/packer.nvim")
-
+use {
+  "nvim-lua/plenary.nvim"
+}
 use("navarasu/onedark.nvim")
 
 -- file explorer
-use("nvim-tree/nvim-tree.lua")
+use {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+    requires = {
+      "MunifTanjim/nui.nvim",
+    },
+  }
+  
 -- syntax highlighter
 use {
     "nvim-treesitter/nvim-treesitter",
@@ -58,7 +67,10 @@ use ("rafamadriz/friendly-snippets")
 -- vs-code like icons
 use("nvim-tree/nvim-web-devicons")
 -- startup screen
-use ("startup-nvim/startup.nvim")
+use {
+    "goolord/alpha-nvim"
+  }
+  
 use ("MaximilianLloyd/ascii.nvim")
 -- statusline
 use("nvim-lualine/lualine.nvim")
