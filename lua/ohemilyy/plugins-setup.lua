@@ -84,6 +84,10 @@ use ("folke/trouble.nvim")
 use ("folke/lsp-colors.nvim")
 -- Search
 use ("nvim-telescope/telescope.nvim")
+-- Fix Cursor
+use("antoinemadec/FixCursorHold.nvim")
+-- Notify
+use ("rcarriga/nvim-notify")
 -- TopBar
 use ("romgrk/barbar.nvim")
 -- rust

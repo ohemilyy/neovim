@@ -8,3 +8,7 @@ require("ohemilyy.plugins.alpha")
 require("ohemilyy.plugins.neotree")
 require("ohemilyy.plugins.trouble")
 require("ohemilyy.plugins.telescope")
+require("ohemilyy.plugins.notify")
+
+
+vim.opt.termguicolors = true
