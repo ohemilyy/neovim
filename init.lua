@@ -13,5 +13,7 @@ require("ohemilyy.plugins.todo-comments")
 require("ohemilyy.plugins.lsp.configs")
 require("ohemilyy.plugins.lsp.handlers").setup()
 require("ohemilyy.plugins.lsp.null-ls")
+require("ohemilyy.plugins.trueZen")
+require("ohemilyy.plugins.comment")
 
 vim.opt.termguicolors = true

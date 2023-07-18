@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/home/ohemilyy/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   ["FixCursorHold.nvim"] = {
     loaded = true,
     path = "/home/ohemilyy/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
@@ -248,6 +253,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ohemilyy/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
+  },
+  ["true-zen.nvim"] = {
+    loaded = true,
+    path = "/home/ohemilyy/.local/share/nvim/site/pack/packer/start/true-zen.nvim",
+    url = "https://github.com/Pocco81/true-zen.nvim"
   },
   ["vim-illuminate"] = {
     loaded = true,

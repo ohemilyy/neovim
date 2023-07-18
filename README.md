@@ -36,6 +36,8 @@ I have a variety of plugins and use Packer as well:
 - NullLS
 - NLSP Settings
 - LSPKind
+- TrueZen
+
 ## Screenshots
 
 The setup itself

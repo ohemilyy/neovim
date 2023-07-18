@@ -108,6 +108,10 @@ use("onsails/lspkind.nvim")
 use("neovim/nvim-lspconfig")
 -- LSP Installer
 use("williamboman/nvim-lsp-installer")
+-- TrueZen
+use ("Pocco81/true-zen.nvim")
+-- Comment
+use("numToStr/Comment.nvim")
 
  if packer_bootstrap then
     require("packer").sync()
