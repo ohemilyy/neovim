@@ -45,7 +45,7 @@ Alpha Load
 ![Alpha Startup](https://i.imgur.com/t0Lwqh6.png)
 
 ## Acknowledgements
-- KatieUmbrella [Katie has been helping me and is the main reason why im moving to NeoVim]
+- KatieUmbra [Katie has been helping me and is the main reason why im moving to NeoVim]
 - Riven [shes been helping me and giving me ideas]
 - emuel
 - gh0stzk
